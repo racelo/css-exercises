@@ -46,3 +46,38 @@ html {
   color: white;
   text-align: left;
 }
+
+/* Solution */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1000px;
+  grid-template-rows: 80px 80px 400px 80px;
+  gap: 15px;
+}
+
+.item-1 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.item-2 {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+
+.item-3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.item-4 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.item-5 {
+  grid-column: 1 / -1;
+  grid-row: 4;
+}
